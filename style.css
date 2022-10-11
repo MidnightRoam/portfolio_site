@@ -16,6 +16,7 @@ header {
     height: auto;
     width: 100%;
     align-items: center;
+    background-color: rgba(125, 125, 224, 0.5);
 }
 
 .logo {
@@ -37,16 +38,16 @@ header {
     align-items: center;
 }
 
-.nav__li:hover {
-    color:rgb(129, 241, 176);
-}
-
 .nav__a {
     color: #333;
     text-decoration: none;
     font-size: 1.5vw;
     padding: 1em;
     font-weight: 300;
+}
+
+.nav__a:hover {
+    color: rgb(129, 241, 176);
 }
 
 /* Portfolio page styles */
@@ -82,18 +83,29 @@ header {
 
 .full-name {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
+    color: rgb(186, 243, 186)
+}
+
+.full-name:hover {
+    font-size: 1.7em;
 }
 
 .profession {
     text-align: center;
-    font-size: 1.2wv;
+    font-size: 1.3wv;
+    color: rgb(186, 243, 186);
+}
+
+.profession:hover {
+    font-size: 1.3em;
 }
 
 .socials-info {
     font-size: 1.2em;
     display: flex;
     justify-content: center;
+    color: rgb(186, 243, 186);
 }
 
 .social__ul {
@@ -113,6 +125,7 @@ header {
     max-width: 100%;
     border-radius: 0.5em;
     text-align: center;
+    color: rgb(125, 125, 224);
 }
 
 .about__text, .hard-skills__text, .soft-skills__text, .education__graduate, .education__self-education {
@@ -151,6 +164,47 @@ header {
     opacity: 0.8;
 }
 
+/* About page styles */
+.about-page {
+    display: flex;
+    justify-content: center;
+}
+
+.about-body {
+    width: 70%;
+    height: auto;
+    background-color: rgb(129, 241, 176);
+}
+
+.about-page__title {
+    font-weight: 500;
+    font-size: 2.5vw;
+    max-width: 100%;
+    text-align: center;
+    color: rgb(125, 125, 224);
+}
+
+.about-page__text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.about-page__text p {
+    font-weight: 300;
+    font-size: 1.5vw;
+    text-align: justify;
+}
+
+b {
+    font-weight: 500;
+    font-size: 1.5vw;
+    text-align: justify;
+    color: rgb(125, 125, 224);
+}
+
 
 /* Footer styles */
 
@@ -159,6 +213,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: rgba(125, 125, 224, 0.5);
 }
 
 footer p {
@@ -182,7 +237,7 @@ img {
 }
 
 .rounded {
-    border-radius: 1.5em;
+    border-radius: 1.5vw;
 }
 
 .mg-1 {
@@ -194,11 +249,11 @@ img {
 }
 
 .border {
-    border-bottom: 2px solid rgb(173, 170, 170);
+    border: 2px solid rgb(186, 243, 186);
 }
 
 .border-bot {
-    border-bottom: 2px solid rgb(173, 170, 170);
+    border-bottom: 2px solid rgb(186, 243, 186);
 }
 
 .icon {
@@ -207,6 +262,11 @@ img {
     font-size: 0.6em;
     width: 5em;
     height: 5em;
+}
+
+.icon:hover {
+    padding: 5px;
+    border-bottom: 2px solid rgb(186, 243, 186);
 }
 
 /* shadow effect style */
