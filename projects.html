@@ -34,13 +34,42 @@
     </header>
     <!-- Content  -->
     <div class="projects-page">
+<!--        <div class="projects-body mg-1 rounded">-->
+<!--            <p class="projects-page__title border-bot glitch">My projects</p>-->
+<!--            <div class="project__card border-bot">-->
+<!--                <p class="project__name">Coffee House</p>-->
+<!--                <a href="https://midnightroam.pythonanywhere.com">-->
+<!--                    <img src="images/coffee-house.PNG" alt="coffee-house" class="project__img rounded">-->
+<!--                </a>-->
+<!--            </div>-->
+<!--            <div class="project__card border-bot">-->
+<!--                <p class="project__name">Django + native JS Chat</p>-->
+<!--                <a href="https://github.com/MidnightRoam/chat_application">-->
+<!--                    <img src="images/django-js-chat.PNG" alt="django-js-chat" class="project__img rounded">-->
+<!--                </a>-->
+<!--            </div>-->
+<!--        </div>-->
         <div class="projects-body mg-1 rounded">
             <p class="projects-page__title border-bot glitch">My projects</p>
-            <div class="project__card border-bot glitch">
-                <p class="project__name">Coffee House</p>
-                <a href="https://midnightroam.pythonanywhere.com">
-                    <img src="images/coffee-house.PNG" alt="coffee-house" class="project__img rounded">
-                </a>
+            <div class="roject__card border-bot">
+                <div class="slider">
+                    <div class="slider__line">
+                        <div class="slider__card">
+                            <a href="https://midnightroam.pythonanywhere.com">
+                                <img src="images/coffee-house.PNG" alt="coffee-house" class="project__img rounded">
+                            </a>
+                        </div>
+                        <div class="slider__card">
+                            <a href="https://github.com/MidnightRoam/chat_application">
+                                <img src="images/django-js-chat.PNG" alt="django-js-chat" class="project__img rounded">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="slider__prev rounded glitch">Prev</button>
+                <button class="slider__next rounded glitch">Next</button>
             </div>
         </div>
     </div>
@@ -72,6 +101,7 @@
         </div>
         <a href="resume.html" class="logo glitch">Uladzislau S.</a>
     </footer>
-    
+    <!-- Connect JS script file -->
+    <script src="js/slider.js"></script>
 </body>
 </html>

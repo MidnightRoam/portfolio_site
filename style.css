@@ -286,15 +286,67 @@ header:before {
 .projects__ul {
     text-align: center;
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.projects__ul img {
+    width: 500px;
+}
+
+.project__link {
+    width: auto;
 }
 
 .project__img {
-    width: 50%;
+    width: 1000px;
+    height: 100%;
     border: 2px solid rgba(125, 125, 224, 0.5);
 }
 
 .project__img:hover {
     opacity: 0.8;
+}
+
+.slider {
+    width: 1000px;
+    height: 591px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider__card a {
+    height: 587px;
+    width: 1000px;
+    padding: 5px;
+    display: flex;
+}
+
+.slider__line {
+    display: flex;
+    position: relative;
+    right: 0;
+    transition: all ease 1s;
+}
+
+.text-center {
+    text-align: center;
+
+}
+
+.slider__prev, .slider__next  {
+    border: 2px solid rgba(125, 125, 224);
+    background: rgba(125, 125, 224);
+    color: #fff;
+    padding: 5px;
+    width: 100px;
+    margin: 5px;
+}
+
+.slider__prev:hover, .slider__next:hover {
+    background: #4affff;
+    color: #171717;
 }
 
 /* About page styles */
@@ -430,7 +482,7 @@ b {
 }
 
 .projects-body {
-    height: 700px;
+    height: auto;
     width: 90%;
     background: rgb(129, 241, 176);
 }
