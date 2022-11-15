@@ -167,21 +167,23 @@ header:before {
 .full-name {
     text-align: center;
     font-size: 30px;
-    color: rgb(186, 243, 186)
+    color: rgb(186, 243, 186);
+    transition: all ease 1s;
 }
 
 .full-name:hover {
-    font-size: 35px;
+    font-size: 33px;
 }
 
 .profession {
     text-align: center;
     font-size: 25px;
     color: rgb(186, 243, 186);
+    transition: all ease 1s;
 }
 
 .profession:hover {
-    font-size: 30px;
+    font-size: 27px;
 }
 
 .socials-info {
@@ -194,7 +196,6 @@ header:before {
 .social__ul {
     display: flex;
     justify-content: center;
-    
 }
 
 @media (max-width: 600px) {
@@ -313,6 +314,7 @@ header:before {
     max-width: 1000px;
     margin: 0 auto;
     overflow: hidden;
+    position: relative;
 }
 
 .slider__card a {
@@ -330,21 +332,40 @@ header:before {
 
 .text-center {
     text-align: center;
-
 }
-
-.slider__prev, .slider__next  {
-    border: 2px solid rgba(125, 125, 224);
-    background: rgba(125, 125, 224);
+.slider__prev {
+    position: absolute;
+    top: 45%;
+    left: 1.5%;
+    background-image: url('https://www.svgrepo.com/show/83076/left-arrow.svg');
+    background-size: cover;
+    background-color: inherit;
+}
+.slider__next {
+    position: absolute;
+    top: 45%;
+    left: 91%;
+    background-image: url('https://www.svgrepo.com/show/44058/right-arrow.svg');
+    background-size: cover;
+    background-color: inherit;
+}
+.slider__prev, .slider__next {
+    box-sizing: border-box;
+    border: none;
     color: #fff;
-    padding: 5px;
-    width: 100px;
-    margin: 5px;
+    width: 2.5em;
+    height: 2.5em;
+    font-size: 1.5em;
+    border-radius: 50%;
+    padding: 0 auto;
+    margin: 0 auto;
+    transition: all ease 0.5s;
 }
 
 .slider__prev:hover, .slider__next:hover {
-    background: #4affff;
-    color: #171717;
+    width: 3em;
+    height: 3em;
+    top: 44%;
 }
 
 /* About page styles */
@@ -463,6 +484,7 @@ b {
 
 /* Projects page styles */
 .projects-page {
+    height: 852px;
     padding-top: 100px;
     display: flex;
     justify-content: center;
