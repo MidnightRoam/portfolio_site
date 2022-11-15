@@ -310,14 +310,12 @@ header:before {
 }
 
 .slider {
-    width: 1000px;
-    height: 591px;
+    max-width: 1000px;
     margin: 0 auto;
     overflow: hidden;
 }
 
 .slider__card a {
-    height: 587px;
     width: 1000px;
     padding: 5px;
     display: flex;
@@ -482,7 +480,7 @@ b {
 }
 
 .projects-body {
-    height: auto;
+    max-height: 665px;
     width: 90%;
     background: rgb(129, 241, 176);
 }
@@ -516,10 +514,7 @@ b {
 }
 
 .project__card {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
+    /* margin-right: 5px; */
 }
 
 @media (max-width: 768px) {
